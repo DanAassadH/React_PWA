@@ -14,32 +14,26 @@ function App() {
     };
 
     fetchData();
-  },[]); // using square bracket to fetch data only when component mounts
+  }, []); // using square bracket to fetch data only when component mounts
 
   return (
     <div className="App">
       <header>
-        <h1>Videos</h1>
+        <h1>Art Videos</h1>
       </header>
 
-      {
-        data.map(video => (
-
-          <div key={video.id}>
-            <h2>
-              {video.name}
-            </h2>
-<div className="thumbnail">
+      {data.map((video) => (
+        <div key={video.id}>
+          <h2>{video.name}</h2>
+          <div className="thumbnail">
             <img src={video.thumbnail} alt=""></img>
             <p>{video.description}</p>
-            </div>            
-            <video height={200} controls src={video.video_url}/>
-<p>Created By: {video.created_by}</p>
-            <p>--------------------------------------------------------</p>
           </div>
-       
-        ))
-      }
+          <video height={200} controls src={video.video_url} />
+          <p>Created By: {video.created_by}</p>
+          <p>-------------------------------------------------------</p>
+        </div>
+      ))}
     </div>
   );
 }

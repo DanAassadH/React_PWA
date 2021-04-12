@@ -25,11 +25,19 @@ function App() {
       {
         data.map(video => (
 
-          <div>
+          <div key={video.id}>
             <h2>
               {video.name}
             </h2>
+<div class="thumbnail">
+            <img src={video.thumbnail} alt=""></img>
+            <p>{video.description}</p>
+            </div>            
+            <video height={200} controls src={video.video_url}/>
+<p>Created By: {video.created_by}</p>
+            <p>--------------------------------------------------------</p>
           </div>
+       
         ))
       }
     </div>

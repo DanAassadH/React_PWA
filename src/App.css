@@ -36,3 +36,14 @@ header {
     transform: rotate(360deg);
   }
 }
+
+.thumbnail{
+  display: flex;
+  flex-direction: row;
+
+  margin: 50px;
+}
+
+.thumbnail p{
+  margin-left: 20px;
+}

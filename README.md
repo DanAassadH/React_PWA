@@ -6,6 +6,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://orangevalleycaa.org/api/videos
 
+## Scripts Used
+
+create-react-app pwa-app
+
+npm start
+
+npm install -g serve
+
+npm run build
+
+serve -s build
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -29,7 +29,7 @@ function App() {
             <h2>
               {video.name}
             </h2>
-<div class="thumbnail">
+<div className="thumbnail">
             <img src={video.thumbnail} alt=""></img>
             <p>{video.description}</p>
             </div>            
